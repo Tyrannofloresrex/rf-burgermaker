@@ -22,7 +22,7 @@
       <img src="https://i.imgur.com/crxxI8v.gif">
     </div>
     <div class = "order">
-      <p class="menu">Order!</p>
+      <p class="menu">Menu:</p>
       <ul>
         {{#each burgers}}
         {{#if consumed}}
@@ -44,8 +44,8 @@
       </div>
 
       <div class="form-group">
-        <label class= "menu"  for="consumed">Consumed?</label><br>
-        <input type="radio" name="consumed" value="0" checked> Consumed!<br>
+        <label class= "menu"  for="consumed">What would you like to do with this Burgerburg Burger?</label><br>
+        <input type="radio" name="consumed" value="0" checked> Consume!<br>
         <input type="radio" name="consumed" value="1"> Order!
       </div>
 
