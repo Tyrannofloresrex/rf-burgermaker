@@ -14,6 +14,7 @@ $(function() {
         data: newConsumeState
       }).then(
         function() {
+          // Set timeout function to display gif transition then reload page
           console.log("changed consume to", newConsume);
           $(".update").show();
           setTimeout(function(){
@@ -40,6 +41,7 @@ $(function() {
       }).then(
         function() {
           console.log("created new burger");
+          // gif animation
           $("body").addClass("background");
           setTimeout(function(){
             location.reload()
@@ -60,6 +62,7 @@ $(function() {
         function() {
           console.log("deleted burger", id)
           $(".delete").show();
+          // gif animation
           setTimeout(function(){
             location.reload()
           }, 1800);;
