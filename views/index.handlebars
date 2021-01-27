@@ -1,0 +1,55 @@
+<div class="flex-container" id="main">
+  <div class="heading">
+    <p class="header">Welcome to Burgerburg!</p>
+  </div>
+  <div class="row">
+    
+    <div class ="consume">
+      <p class="menu">Consume!</p>
+      <ul>
+        {{#each burgers}}
+        {{#unless consumed}}
+        {{> burgers/burger-block consume=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class ="update">
+      <img src="https://media3.giphy.com/media/3o7TKUGccxlaQqdgRO/giphy.gif">
+    </div>
+    <div class = "delete">
+      <img src="https://i.imgur.com/crxxI8v.gif">
+    </div>
+    <div class = "order">
+      <p class="menu">Order!</p>
+      <ul>
+        {{#each burgers}}
+        {{#if consumed}}
+        {{> burgers/burger-block consume=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class="create">
+    
+    <p class="menu">Make a Beefy Creation:</p>
+    
+    <form class="create-form">
+
+      <div class="form-group">
+        <label class= "text" for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="name">
+      </div>
+
+      <div class="form-group">
+        <label class= "menu"  for="consumed">Consumed?</label><br>
+        <input type="radio" name="consumed" value="0" checked> Consumed!<br>
+        <input type="radio" name="consumed" value="1"> Order!
+      </div>
+
+      <button class="add" type="submit">Add Burger</button>
+    </form>
+  </div>
+</div>

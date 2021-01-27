@@ -1,0 +1,150 @@
+body {
+ 
+  background-color: rgb(130, 231, 192);
+}
+.background{
+ background-image: url(https://i.pinimg.com/originals/5c/7c/d6/5c7cd6368d22ac059c9aef589babc948.gif);
+ background-size: cover;
+}
+.background * {
+transition: all 1s;
+transform: scale(1.5);
+opacity: 0;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.header{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 50px;
+  color: purple;
+  margin:5px;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  width: 50vw;
+}
+.consume{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+.order{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 16px;
+}
+.update {
+  display:none;
+  justify-content: center;
+  height: 100px;
+}
+.delete {
+  display:none;
+  justify-content: center;
+  height: 100px;
+}
+img{
+  width: 300px;
+  height:300px;
+}
+.create {
+  display:flex;
+  flex-direction: column;
+  margin:3px;
+
+}
+li {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 26px;
+  width: 200px;
+  background-color:rgba(236, 240, 241, 0.5);
+  border-radius: 4px
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  font-family: 'Patrick Hand', cursive;
+  font-size:24px;
+}
+
+.create-status {
+  font-family: 'Patrick Hand', cursive;;
+}
+
+.menu{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 42px;
+  color: purple;
+  margin:5px;
+}
+.text{
+  font-family: 'Patrick Hand', cursive;
+}
+
+.change-consume{
+  transition-duration: 0.4s;
+  background-color: #97d5ee;;
+  color: purple;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px
+}
+.change-consume:hover{
+background-color: purple;
+  color:#97d5ee;
+}
+
+.delete-burger{
+  transition-duration: 0.4s;
+  background-color: red;
+  color: yellow;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+}
+.delete-burger:hover{
+background-color: yellow;
+  color: red;
+}
+
+.add{
+  transition-duration: 0.4s;
+  background-color: #97d5ee;;
+  color: purple;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px
+}
